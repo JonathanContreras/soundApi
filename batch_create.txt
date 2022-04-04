@@ -1,0 +1,11 @@
+npm init --yes
+npm install express --save
+npm install nodemon --save-dev
+npm install jquery --save
+npm install mediaserver --save
+npm install multer --save
+
+ni index.js
+ni index.html
+mkdir public
+mkdir canciones

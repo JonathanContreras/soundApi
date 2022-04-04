@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #121314;
+    color: #dfe0c6;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.contenedor-izquierdo {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.lista-canciones {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cancion {
+    padding: 20px;
+    background: #1c1c1f;
+    border-bottom: 2px solid #121314;
+    cursor: pointer;
+}
+
+.contenedor-derecho {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+@media (max-width: 600) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-izquierdo {
+        flex: 1;
+        overflow-y: scroll;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+    }
+}
